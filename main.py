@@ -10,8 +10,8 @@ xd = 6
 yd = 107
 cl()
 print('\n'*3)
-xm = int(input("xm: "))
-ym = int(input("ym: "))
+xm = int(input("mS: "))
+ym = int(input("mE: "))
 
 file1 = open('lat.txt', 'a')
 file2 = open('long.txt', 'a')
@@ -21,8 +21,8 @@ count = int(input("Count: "))
 for i in range(count):
     cl()
     print('\n'*3)
-    xs = float(input("mS: "))
-    ys = float(input("mE: "))
+    xs = float(input("sS: "))
+    ys = float(input("sE: "))
     s = xd + (xm/60) + (xs/3600)
     e = yd + (ym/60) + (ys/3600)
 
